@@ -1,0 +1,39 @@
+else if (S4 > LINETHRESHOLD) {
+      digitalWrite(13, HIGH);
+      speedLeft = 0;
+      speedRight = 10;
+      }
+else if (S1 > LINETHRESHOLD) {
+    digitalWrite(13, HIGH);
+    speedLeft = 10;
+    speedRight = 5;
+    
+  }
+else if (S0 > LINETHRESHOLD) { digitalWrite(13, HIGH);
+      speedLeft = 10;
+      speedRight = 5;
+     }
+else if (S5 > LINETHRESHOLD) { digitalWrite(13, HIGH);
+      speedLeft = 5;
+      speedRight = 10;
+     }
+else if (S1 > LINETHRESHOLD && S2 > LINETHRESHOLD ) { digitalWrite(13, HIGH);
+      speedLeft = 10;
+      speedRight = 5;
+     }
+else if (S3 > LINETHRESHOLD && S4 > LINETHRESHOLD) { digitalWrite(13, HIGH);
+      speedLeft = 5;
+      speedRight = 10;
+     }
+else if (S2 > LINETHRESHOLD && S1 > LINETHRESHOLD && S0 > LINETHRESHOLD) {digitalWrite(13, HIGH);
+      speedLeft = 10;
+      speedRight = 5;
+     }
+else if (S3 > LINETHRESHOLD && S4 > LINETHRESHOLD && S5 > LINETHRESHOLD) { digitalWrite(13, HIGH);
+      speedLeft = 5;
+      speedRight = 10;
+     }
+else if (S0 < LINETHRESHOLD && S1 < LINETHRESHOLD && S2 < LINETHRESHOLD &&  S3 < LINETHRESHOLD && S4 < LINETHRESHOLD && S5 < LINETHRESHOLD) { digitalWrite(13, LOW);
+      speedLeft = 0;
+      speedRight = 0;
+     }
